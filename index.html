@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="tabs-wrapper">
+        <div class="tabs">
+            <ul class="tabs-caption">
+                <li class="active">
+                    <img class="icon" src="./img/tooltip.svg">
+                    <h2 class="tabs-title">INFORMATION</h2>
+                </li>
+                <li>
+                    <img class="icon" src="./img/card.svg">
+                    <h2 class="tabs-title">RATINGS INFO</h2>
+                </li>
+                <li>
+                    <img class="icon" src="./img/basket.svg">
+                    <h2 class="tabs-title">WHERE TO BUY</h2>
+                </li>
+            </ul>
+
+            <div class="tabs-content active">
+                <!-- Содержимое первого блока -->
+                <div>
+                    <img class="img-game" src="./img/Layer 33 copy.png">
+                    <div class="wrapper-stars" id="comment_rating">
+                        <a href="javascript:void(0)"><i class="fas fa-star star-five"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-star star-five"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-star star-five"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-star star-five"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-star star-five"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="title-wrapper">
+                        <div>
+                            <h2 class="title">FarCry 4</h2>
+                            <h3 class="subtitle">First Released Nov 17, 2014</h3>
+                        </div>
+                        <div class="svg">
+                            <svg id="animated" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#787c9b" stroke-width="2" fill="#212534" />
+                                <path fill="none" stroke-linecap="butt" stroke-width="5" stroke="#1AE680"
+                                    stroke-dasharray="251.2,0" d="M50 10
+                                     a 20 20 0 0 1 0 80
+                                     a 20 20 0 0 0 0 -80">
+                                    <animate attributeName="stroke-dasharray" from="0,251.2" to="251.2,0" dur="5s" />
+                                </path>
+                                <text font-family="'Lato', sans-serif" ; font-size="24px" font-weight="normal"
+                                    stroke-width="1" fill="#aaadbb" id="count" x="50" y="50" text-anchor="middle"
+                                    dy="7">4.8
+                                </text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild
+                        region of the
+                        Hima
+                        layas struggling under the regime of a despotic self-appointed king.
+                    </p>
+                    <div class="btn-wrapper">
+                        <div>
+                            <p class="sale">20% OFF!</p>
+                            <p class="price">$59.96</p>
+                        </div>
+                        <button class="btn" type="submit">BUY IT NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content">
+                Something new for second
+            </div>
+            <div class="tabs-content">
+                Something new for third
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

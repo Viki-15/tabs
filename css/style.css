@@ -1,0 +1,205 @@
+body,
+html {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #212534;
+    background-image: url(../img/Layer\ 41.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+.tabs-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4);
+}
+
+.tabs {
+    width: 600px;
+    height: 115px;
+    background-color: #2b3040;
+}
+
+.tabs-caption {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 35px 50px 0 50px;
+}
+
+.tabs-content {
+    padding: 60px 40px 60px 50px;
+    display: none;
+    background-color: #212534;
+    box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4);
+    /* по умолчанию прячем все блоки */
+}
+
+.tabs-content.active {
+    display: block;
+    display: flex;
+    /* по умолчанию показываем нужный блок */
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+li:hover>.icon {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+li:hover>.tabs-title {
+    opacity: 1;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.icon {
+    margin-bottom: 10px;
+    opacity: 0.5;
+    border: none;
+}
+
+.tabs-title {
+    opacity: 0.7;
+    color: #b7bacd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+
+.img-game {
+    margin-right: 45px;
+    margin-bottom: 20px;
+    background-color: #212534;
+    box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4);
+}
+
+div:hover .rating~a {
+    opacity: 1;
+    color: #FFDF29;
+}
+
+div:hover a:hover~a,
+.rating~a {
+    opacity: .2
+}
+
+.star-five {
+    color: #FFDF29;
+    margin-right: 5px;
+    border: none;
+}
+
+/* .star-five:not(:last-child) {
+    margin-right: 10px;
+} */
+.wrapper-stars {
+    text-align: center;
+    margin-right: 45px;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.svg {
+    width: 80px;
+    height: 80px;
+    margin-top: -20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #fdfdfd;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.counter {
+    color: #aaadbb;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+
+.btn-wrapper {
+    display: flex;
+}
+
+.sale {
+    color: #fedc3f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-right: 50px;
+}
+
+.btn {
+    width: 164px;
+    height: 55px;
+    background-color: #13e28d;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0d9c61;
+    transition: 1s;
+}
